@@ -6,7 +6,7 @@ document.querySelector('li').remove();
 
 (async () => {
 
-    const database = await fetch("http://localhost:3000/tasks").then((res)=> {
+    const database = await fetch("hhttps://to-do-backend-nfb8.onrender.com/tasks").then((res)=> {
         return res.json()
     }).then((data)=>{
         return data;
@@ -85,7 +85,7 @@ const postTask = async (titulo,feito) => {
         }),
     }
 
-    const response = await fetch("http://localhost:3000/tasks",init).then((res)=> {
+    const response = await fetch("https://to-do-backend-nfb8.onrender.com/tasks",init).then((res)=> {
         return res.json()
     }).then((data)=>{
         return data;
@@ -105,7 +105,7 @@ const patchTask = async (id,titulo,feito) => {
         }),
     }
 
-    const response = await fetch("http://localhost:3000/tasks/"+id,init);
+    const response = await fetch("https://to-do-backend-nfb8.onrender.com/tasks/"+id,init);
 }
 
 const deleteTask = async (id) => {
@@ -114,5 +114,5 @@ const deleteTask = async (id) => {
         method: 'DELETE'
     }
 
-    const response = await fetch("http://localhost:3000/tasks/"+id,init);
+    const response = await fetch("https://to-do-backend-nfb8.onrender.com/tasks/"+id,init);
 }
