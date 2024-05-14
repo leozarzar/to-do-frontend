@@ -1,0 +1,104 @@
+:root{
+
+}
+
+body{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h1{
+    color: white ;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.list-box{
+    background-color: white;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    width: 100%;
+}
+
+li{
+    height: 35px;
+}
+
+.list-item{
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10px;
+    font-family: helvetica;
+    font-size: medium;
+}
+
+.list-item div{
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.checkbox{
+    transform: scale(1.25);
+}
+
+.title{
+    font-family: helvetica;
+    font-size: medium;
+    border: none;
+    width: 90%;
+}
+
+.title:focus{
+    outline: none;
+}
+
+.list-item i{
+    background: none;
+    border: none;
+    transform: scale(0.75);
+    color: lightgrey;
+    display: none;
+}
+
+.list-item i:hover{
+    color: black;
+}
+
+button{
+    height: 40px;
+    width: 180px;
+    font-family: helvetica;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(148, 221, 40);
+    border-radius: 20px;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(135, 201, 36);
+    border-radius: 20px;
+    color: white;
+}
