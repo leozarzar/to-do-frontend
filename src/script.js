@@ -6,7 +6,7 @@ document.querySelector('li').remove();
 
 (async () => {
 
-    const database = await fetch("hhttps://to-do-backend-nfb8.onrender.com/tasks").then((res)=> {
+    const database = await fetch("https://to-do-backend-nfb8.onrender.com/tasks").then((res)=> {
         return res.json()
     }).then((data)=>{
         return data;
