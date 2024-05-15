@@ -34,9 +34,10 @@ const newTask = (id,titulo,feito) => {
     newline.querySelector('.title').addEventListener('focusout', async ()=>{
         if(id === '#'){
             if(newline.querySelector('.title').value !== '') id = await postTask(newline.querySelector('.title').value,newline.querySelector('.checkbox').checked);
+            else newline.remove();
         }
         else{
-            if(newline.querySelector('.title').value == ''){
+            if(newline.querySelector('.title').value === ''){
                 newline.remove();
                 await deleteTask(id);
             }
